@@ -1,0 +1,11 @@
+var subj1 = prompt("Please enter first subject's name");
+var subj1ObtainedMarks = prompt("Please write marks obtained in " + +subj1);
+var subj2 = prompt("Please enter second subject's name");
+var subj2ObtainedMarks = prompt("Please write marks obtained in " + +subj2);
+var subj3 = prompt("Please enter third subject's name");
+var subj3ObtainedMarks = prompt("Please write marks obtained in " + +subj3);
+var totalMarks = 100;
+document.write("<b>Subject Total Marks Obtained Marks Percentage</b> </br>");
+document.write(subj1 + " " + totalMarks + " " +subj1ObtainedMarks+ "  " +(subj1ObtainedMarks/totalMarks)*100 + "% </br>" );
+document.write(subj2 + " " + totalMarks + " " +subj2ObtainedMarks+ "  " +(subj2ObtainedMarks/totalMarks)*100  + "% </br>");
+document.write(subj3 + " " + totalMarks + " " +subj3ObtainedMarks+ "  " +(subj3ObtainedMarks/totalMarks)*100  + "% </br>");

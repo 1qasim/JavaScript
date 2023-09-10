@@ -1,0 +1,18 @@
+var number = 15;
+document.write("The value of a is: " + number + "</br>");
+document.write("- - - - - - - - - - - - - - - - - - - - - - </br>");
+number++;
+document.write("The value of ++a is: " + number + "</br>");
+document.write("Now the value of a is: " + number + "</br>");
+document.write("- - - - - - - - - - - - - - - - - - - - - - </br>");
+var newNumber= number++;
+document.write("The value of a++ is: " + newNumber + "</br>");
+document.write("Now the value of a is: " + number + "</br>");
+document.write("- - - - - - - - - - - - - - - - - - - - - - </br>");
+newNumber = --number;
+document.write("The value of --a is: " + number + "</br>");
+document.write("Now the value of a is: " + number + "</br>");
+document.write("- - - - - - - - - - - - - - - - - - - - - - </br>");
+newNumber = number--;
+document.write("The value of a-- is: " + newNumber + "</br>");
+document.write("The value of a-- is: " + number + "</br>");
