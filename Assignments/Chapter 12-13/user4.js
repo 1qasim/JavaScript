@@ -1,3 +1,4 @@
+// Question 4
 var st1 = prompt("Enter a charachter");
 if (st1 ==="a") {
     alert("It is a vowel");

@@ -1,3 +1,4 @@
+// Question 1
 var char =prompt("Enter a charachter");
 char = char.charCodeAt(0);
 if ((char >= 65)&&(char <= 90)) {

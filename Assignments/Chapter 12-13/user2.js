@@ -1,3 +1,4 @@
+// Question 2
 var userInput1 = +prompt("Enter first Integer");
 var userInput2 = +prompt("Enter second Integer");
 if (userInput1 === userInput2) {
