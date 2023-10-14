@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.Counter{
+    width: 300px;
+    padding: 50px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 200px;
+    margin-left: 650px;
+}
+h1{
+    margin-left: 10%;
+}
+h2{
+    margin-left: 30%;
+}
+button{
+    background-color: red;
+    color: white   ;
+    padding: 5px;
+    border-radius: 5px;
+}
