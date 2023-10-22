@@ -15,8 +15,10 @@
 
 var counterNumber = 0;
 
+
 function incrementHandler() {
     document.getElementById("value").innerHTML = ++counterNumber;
+    console.log(counterNumber);
     if (counterNumber >= 1 ) {
         document.getElementById("value").style.color = "black"
     }
@@ -26,7 +28,7 @@ function decrementHandler() {
     // document.getElementById("value").innerHTML = --counterNumber;
     if (counterNumber === 0 ) {
         document.getElementById("value").style.color = "red"
-        document.getElementById("value").innerHTML = counterNumber*0;
+        // document.getElementById("value").innerHTML = counterNumber*0;
     }
     else {
         document.getElementById("value").innerHTML = --counterNumber;
@@ -34,7 +36,7 @@ function decrementHandler() {
 }
 
 function resetHandler() {
-    document.getElementById("value").innerHTML = counterNumber*0;
+    counterNumber = document.getElementById("value").innerHTML = counterNumber*0;
     
   
 }
