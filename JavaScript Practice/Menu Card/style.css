@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&family=Young+Serif&display=swap');
+/* *{
+    box-sizing: border-box;
+} */
+.buttonstyling {
+    border-radius: 20px;
+    border-color: yellow;
+    background-color: transparent;
+    font-family: 'Playpen Sans', cursive;
+font-family: 'Young Serif', serif;
+padding: 10px;
+cursor: pointer;
+
+}
+
+
+
+#menuContainer{
+    width: 1500px;
+    height: 1000px;
+    background-color: rgb(250 237 227);
+    border-radius: 20px;
+
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Number Game</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+        body{background-color: rgb(53, 50, 50);
+            font-family: 'Pixelify Sans', sans-serif;
+            font-size: large;
+        }
+            
+            
+        #mainContainer{
+            
+            width: 751px;
+            height: 503px;
+            background-color: black;
+            color: white;
+            margin: auto;
+            margin-top: 150px;
+            padding: 10px;
+
+        }
+        #nav{
+            display: flex;
+            justify-content: space-between;
+        }
+        .function{
+            display: flex;
+            justify-content: space-around;
+            width: 754px;
+            margin-top: 72px;
+            
+        }
+        #again{
+            width: 100px;
+            height: 53px;
+            font-family: 'Pixelify Sans', sans-serif;
+            font-size: x-large;
+        }
+        #check{
+            width: 100px;
+            height: 53px;
+            font-family: 'Pixelify Sans', sans-serif;
+            font-size: x-large;
+        }
+        h1{
+            margin-left: 224px;
+        }
+       #answerStyling{
+            width: 102px;
+            height: 70px;
+            background-color: white;
+            border: 5px solid;
+            border-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 318px;
+            margin-top: 53px;
+            font-size: 61px;
+            color: black;
+            position: relative;
+        }
+        #qmark{
+            position: absolute;
+            font-size: 117px;
+            background-color: white;
+            width: 128px;
+            height: 102px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        input{
+            width: 104px;
+            height: 79px;
+            background-color: transparent;
+            border-color:  rgba(255, 255, 255, 0.671);
+            border-width: 4px;
+            color: white;
+        }
+   
+    </style>
+</head>
+<body>
+    <div id="mainContainer">
+        <div id="nav"><button id="again">Again !</button>  <span>(Between 1 and 20)</span></div>
+        <h1>Guess My Number !</h1>
+        <div id="answerStyling">
+        <img src="./Assets/question_mark-removebg-preview.png" alt=""> 
+        <div id="qmark">?</div>
+        </div>
+        <div class="function">
+            <div id="operation">
+                <input type="text" id="number"> <br><br>
+                <button id="check">Check !</button>
+            </div>
+            <div class="result">
+                <p id="remarks">Start Guessing...</p>
+                <p id="score">Score</p>
+                <p id="highScore">High Score: 0</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="App.js"></script>
+</body>
+</html>
