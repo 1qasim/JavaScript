@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <style>
+        .mainContainer{
+            width: 503px;
+            height: 586px;
+            border: 2px solid black;
+            margin: auto;
+            margin-top: 101px;
+        }
+        h1{
+            margin-left: 162px;
+        }
+        input{
+            margin-left: 30px;
+            width: 332px;
+            height: 57px;
+            border-radius: 30px;
+        }
+        #addButton{
+            margin-left: 12px;
+            width: 105px;
+            height: 55px;
+            border-radius: 43px;
+        }
+        ul{
+            list-style: none;
+        }
+        li{
+            
+            width: 366px;
+            height: 70px;
+            border: 2px solid black;
+            border-radius: 81px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-bottom: inherit
+}
+        .editDeleteButton{
+            border-radius: 28px;
+            width: 80px;
+            height: 37px;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="mainContainer">
+       <div>
+        <h1>To Do List</h1>
+        <input type="text" placeholder="What do you need to do?" id="input"><button id="addButton">Add</button>
+        <ul id="ulitems">
+            <!-- <li>Working on project ABC <button class="editDeleteButton">Edit</button><button class="editDeleteButton">Delete</button> </li> -->
+            
+        </ul>
+       </div>
+    </div>
+    <script src="App.js"></script>
+</body>
+</html>

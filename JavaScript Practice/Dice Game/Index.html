@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@700&display=swap');
+        
+        body{
+            font-family: "Edu+TAS+Beginner", serif;
+        }
+        .mainContainer{
+            width: 1100;
+            height: 730px;
+            background: linear-gradient(
+                to bottom,
+                purple,
+                brown
+                
+            );
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            position: relative;
+            color: white;
+        }
+        .playersmaindiv{
+            width: 521px;
+            height: 649px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            background: linear-gradient(
+                to bottom,
+                brown,
+                white
+                
+         
+            );
+        }
+        h1{
+            margin-top: 80px;
+        }
+        h2{
+            margin-left: 5px;
+        }
+        .currentScore{
+            width: 190px;
+            height: 100px;
+            background-color: brown;
+            border-radius: 2px;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 282px;
+            margin-right: 10px;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+        }
+        #rollDiceButton{
+            position: absolute;
+            margin-top: 337px;
+            
+        }
+        #holdButtonStyling{
+            position: absolute;
+            margin-top: 459px;
+        }
+        #newGameButton{
+            position: absolute;
+            margin-bottom: 543px;
+        }
+        .diceImage{
+            position: absolute;
+            margin-bottom: 30px;
+        }
+      .playersSecondDiv{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+      }
+      #newGame{
+        border-radius: 36px;
+        width: 133px;
+        height: 45px;
+        background-color: #e3cba8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #roll{
+        border-radius: 36px;
+        width: 133px;
+        height: 45px;
+        background-color: #e3cba8;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column-reverse;
+      }
+      #holdButton{
+        border-radius: 20px;
+        width: 84px;
+        height: 32px;
+        background-color: #e3cba8;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+     .one{
+        border-width: 2px 0px 2px 2px;
+            border-style: solid;
+            border-color: #736969;
+
+      }
+      .two{
+        border-width: 2px 2px 2px 2px;
+            border-style: solid;
+            border-color: #736969;
+      }
+      .winningCelebration{
+        background-image: url(./Assets/winning\ 5.gif);
+        background-repeat: no-repeat; 
+      };
+    </style>
+</head>
+<body>
+    <div class="mainContainer">
+       
+        <div class="playersmaindiv one" id="1">
+            <div class="playersSecondDiv" id="playersSecondDiv1">
+                <h1 id="player1">Player 1</h1>
+                <div id="win-lostP1"></div>
+                <h2 id="totalScorep1">0</h2>
+                
+                <!-- <h2 id="win">You Win </h2> -->
+                <!-- <h2 id="lost">You Lost</h2> -->
+                <div class="currentScore">
+                    <div class="h3container">Current</div>
+                    <div class="h3numberContainer" id="csp1">0</div>
+                </div>
+            </div>   
+                
+
+            
+            
+        </div>
+        <div class="playersmaindiv two" id="2">
+            <div class="playersSecondDiv" id="playersSecondDiv2">
+                <h1 id="player2">Player 2</h1>
+                <div id="win-lostP2"></div>
+                <h2 id="totalScorep2">0</h2>
+                
+                <div class="currentScore">
+                    <div class="h3container">Current</div>
+                    <div class="h3numberContainer" id="csp2">0</div>
+                </div>
+            </div>
+        </div>
+        <div id="rollDiceButton">
+            <button  id="roll"> <img src="./Assets/rolling_Dice_2-removebg-preview.png" width="50px" height="20px" alt=""> Roll Dice</button>
+        </div>
+        <div id="holdButtonStyling">
+            <button id="holdButton"> <img src="./Assets/hold.jpg" width="30px" height="20px" alt="">Hold</button>
+        </div>
+        <div id="newGameButton">
+            <button id="newGame"> <img src="./Assets/reload_icon.png" width="50px" height="50px" alt=""> New Game</button>
+        </div>
+        <div class="diceImage"><img src="./Assets/1.jpg" alt="" id="diceImage"></div>
+    </div>
+    <script src="App.js"></script>
+</body>
+</html>
