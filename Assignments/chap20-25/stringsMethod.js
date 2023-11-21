@@ -57,11 +57,45 @@
 // console.log(convertInASCII);
 
 
-// let txt = "I bananas";
-// alert(txt.slice(2,9));
-var str = prompt("Enter some text");
- var numChars = str.length;
- for (var i = 0; i < numChars; i++) {
- if (str.slice(i,i+2) === "  ") 
- alert("No double spaces!");
- break;}
+// Question 14
+// let bakeryItems = ["cake", "apple pie", "cookie", "chips", "patties" ]
+// let userItem = prompt("Welcome to ABC Bakery, What do you want to order Sir/Ma'am?");
+// let matchFound = false;
+// console.log(userItem);
+// console.log(bakeryItems[0])
+// console.log(matchFound)
+
+// for(var i=0; i <=bakeryItems.length; i++)
+//     if(userItem.toLocaleLowerCase() === bakeryItems[i] ){
+//         matchFound = true;
+//         alert(`${userItem} is available`);
+//         break;
+//     }
+//  if(matchFound === false){
+//     alert(`${userItem} is not available`);
+//  }   
+
+// Question 16
+// let university = "University of Karachi"
+// let universityArray = university.split("");
+// console.log(universityArray);
+// for (var i=0; i<= universityArray.length - 1; i++)
+// document.write(`${universityArray[i]} </br>`);
+
+// Question 17
+// let userInput = prompt("enter your input");
+// let splittedUserInput = userInput.split("");
+// let indexNumber = splittedUserInput.length - 1;
+// console.log(splittedUserInput[indexNumber]);
+
+// Question 18
+// let text = "the quick brown fox jumps over the lazy dog";
+// let myArray = text.split(" ");
+// let num = 0;
+// for(var i = 0; i<= myArray.length; i++ ){
+//     if(myArray[i]=== "the"){
+//         num++
+//     }
+    
+// }
+// console.log(num);
