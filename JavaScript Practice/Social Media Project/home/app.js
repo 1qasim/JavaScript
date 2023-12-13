@@ -35,7 +35,7 @@ const postDisplayHandler = () => {
             textHTML = `
             <div class="card text-center">
             <div class="card-header" id="userName">
-                   ${loggedInUser.email === post?.userDetail.email ? `<button onclick="editHandler(${post?.id})">Edit</button> ${post?.userDetail.userName} <button onclick="deleteHandler(${post?.id})">Delete</button>` : `${post?.userDetail.userName}`} 
+                   ${loggedInUser.loggedInuserEmail === post?.userDetail.loggedInuserEmail ? `<button onclick="editHandler(${post?.id})">Edit</button> ${post?.userDetail.loggedInUserName} <button onclick="deleteHandler(${post?.id})">Delete</button>` : `${post?.userDetail.loggedInUserName}`} 
                 </div>
             <div class="card">
   <div class="card-body">
@@ -51,7 +51,7 @@ const postDisplayHandler = () => {
             textHTML = `
                 <div class="card text-center">
                 <div class="card-header" id="userName">
-                   ${loggedInUser.email === post?.userDetail.email ? `<button onclick="editHandler(${post?.id})">Edit</button> ${post?.userDetail.userName} <button onclick="deleteHandler(${post?.id})">Delete</button>` : `${post?.userDetail.userName}`} 
+                   ${loggedInUser.loggedInuserEmail === post?.userDetail.loggedInuserEmail ? `<button onclick="editHandler(${post?.id})">Edit</button> ${post?.userDetail.loggedInUserName} <button onclick="deleteHandler(${post?.id})">Delete</button>` : `${post?.userDetail.loggedInUserName}`} 
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">Special Post</h5>
